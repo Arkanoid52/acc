@@ -1,76 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caracteristicas</title>
-    <style>                
-
-        img {
-            width: 200px;                                                
-        }
-
-        #caracteristicas {
-
-          
-	    width: 300px;
-            background: rgba(140, 150, 100, .4);            
-            border-radius: 10px;
-            border: 2px solid black;
-            padding: 10px 5px;
-            position: absolute;
-            top: 270px;
-            left: 500px;
-            font-family: sans-serif;
-            display: none;
-        }
-
-        #caracteristicas span {
-            position: relative;
-            left: 280px;
-            color: red;
-            cursor: pointer;
-            font-weight: bold;        
-        }
-    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
 </head>
-<body>
 
-   <body bgcolor=”#99EFE8”>
-   <h1><center>Tarea 3</center>
-   <h3><center>Da clic en la computadora para conocer sus caracteristicas</center>
-   </h1><font size=”3″ face=”Comic Sans MS, Arial, MS Sans Serif”>
-    
-    <center><img id="img" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Dell_Inspiron_One_23_Touch_AIO_Desktop_PC.png" alt=""></center>
-
-    <div id="caracteristicas">
-        <span id="cerrar">X</span>
-        <ul>
-            <li>DELL</li>
-            <li>Procesador Core i7-5800u</li>
-            <li>Memoria ram 16GB</li>
-            <li>Disco duro 1TB</li>
-            <li>Tarjeta grafica RADEON 1GB</li>
-            <li>Camara web HD</li>
-            
-        </ul>
-    </div>
-
-    <script>
-        var imagen = document.getElementById('img');
-        var cerrar = document.getElementById('cerrar');
-        var ventana = document.getElementById("caracteristicas");
-
-        imagen.addEventListener('click',function(){
-            console.log("mostrar!!");
-            ventana.style.display = 'flex';   
-        })        
-
-        cerrar.addEventListener('click', function() {
-            console.log("ocultar!!");
-            ventana.style.display = 'none';
-        })
-    </script>
-
-</body>
+<frameset rows="80,*" cols="*" frameborder="NO" border="0" framespacing="0">
+  <frame src="Cabecera.html" name="topFrame" scrolling="NO" noresize >
+  <frameset rows="*" cols="269,*" framespacing="0" frameborder="NO" border="0">
+    <frame src="Costado.html" name="leftFrame" scrolling="NO" noresize>
+    <frame src="Principal.html" name="mainFrame">
+  </frameset>
+</frameset>
+<noframes><body>
+</body></noframes>
 </html>
+
